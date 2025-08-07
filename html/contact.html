@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Astro Event Center</h1>
+      <img src="/assets/images/Astrologo.jpg" alt="logo" id="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/events.html">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Contact Hero Section -->
+      <section class="contact-hero">
+        <h2>Contact Us</h2>
+        <p>Let's make your next event stellar! 🌟</p>
+      </section>
+
+      <!-- Main Contact Section -->
+      <div class="contact-wrapper">
+        <!-- Contact Information -->
+        <section class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h3>Location</h3>
+            <p>123 Cosmos Avenue<br />Starville, Galaxy 12345</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">📱</div>
+            <h3>Phone</h3>
+            <p>Main: (555) 123-4567<br />Events: (555) 789-0123</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">✉️</div>
+            <h3>Email</h3>
+            <p>info@astroeventcenter.com<br />events@astroeventcenter.com</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">🕒</div>
+            <h3>Hours</h3>
+            <p>Monday - Friday: 9AM - 8PM<br />Saturday: 10AM - 6PM</p>
+          </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Your Email</label>
+            </div>
+
+            <div class="form-group">
+              <select id="eventType" name="eventType" required>
+                <option value="">Select Event Type</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="wedding">Wedding</option>
+                <option value="concert">Concert</option>
+                <option value="private">Private Party</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <input type="date" id="eventDate" name="eventDate" required />
+              <label for="eventDate">Preferred Date</label>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </section>
+      </div>
+
+      <!-- Map Section -->
+      <section class="map-section">
+        <h3>Find Us in the Cosmos</h3>
+        <div class="map-container">
+          <!-- Replace src with your actual Google Maps embed code -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-71.123456!3d42.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zNyc0OC4wIk4gNzLCsDA3JzI0LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>What's your venue capacity?</h4>
+            <p>
+              Our main hall can accommodate up to 500 guests, while our smaller
+              spaces range from 50-200 people.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Do you provide catering?</h4>
+            <p>
+              We work with several preferred catering partners and can help
+              coordinate all your food and beverage needs.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>What's included in the rental?</h4>
+            <p>
+              Basic rentals include the space, tables, chairs, basic lighting,
+              and sound system. Additional services available.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>How far in advance should I book?</h4>
+            <p>
+              We recommend booking 6-12 months in advance for large events,
+              though shorter notice may be accommodated.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>📍 123 Cosmos Avenue</p>
+          <p>📱 (555) 123-4567</p>
+          <p>✉️ info@astroeventcenter.com</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/events.html">Events</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="/index.html#gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/countryboyz420"
+              aria-label="Facebook"
+            >
+              <i>🌟</i> Facebook
+            </a>
+            <a
+              href="https://www.linkedin.com/in/david-hawley-5936a817a"
+              aria-label="LinkedIn"
+            >
+              <i>💫</i> LinkedIn
+            </a>
+            <a href="https://github.com/DevCodeX1" aria-label="GitHub">
+              <i>⭐</i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Astro Event Center | Designed by DevCodeX</p>
+      </div>
+    </footer>
+  </body>
+</html>

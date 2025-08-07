@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Astro Event Center</h1>
+      <img src="/assets/images/Astrologo.jpg" alt="logo" id="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Events Hero Section -->
+      <section class="events-hero">
+        <h2>Upcoming Events</h2>
+        <p>Discover the universe of possibilities</p>
+      </section>
+
+      <!-- Event Categories -->
+      <section class="event-categories">
+        <h3>Browse by Category</h3>
+        <div class="category-grid">
+          <div class="category-card">
+            <span class="category-icon">🎭</span>
+            <h4>Corporate Events</h4>
+            <p>Conferences, seminars, and team building</p>
+          </div>
+          <div class="category-card">
+            <span class="category-icon">💑</span>
+            <h4>Weddings</h4>
+            <p>Celestial ceremonies and receptions</p>
+          </div>
+          <div class="category-card">
+            <span class="category-icon">🎵</span>
+            <h4>Concerts</h4>
+            <p>Live music under the stars</p>
+          </div>
+          <div class="category-card">
+            <span class="category-icon">🎓</span>
+            <h4>Private Events</h4>
+            <p>Birthdays, graduations, and celebrations</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Events -->
+      <section class="events-list">
+        <h3>Featured Events</h3>
+        <div class="event-grid">
+          <!-- Event Card 1 -->
+          <article class="event-card">
+            <div class="event-image">
+              <img
+                src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80"
+                alt="Tech Conference"
+              />
+              <div class="event-date">
+                <span class="month">AUG</span>
+                <span class="day">15</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>Cosmic Tech Summit 2025</h4>
+              <p class="event-details">
+                <span>🕒 9:00 AM - 5:00 PM</span>
+                <span>📍 Main Hall</span>
+              </p>
+              <p class="event-description">
+                Join industry leaders for a day of innovation and networking in
+                our state-of-the-art venue.
+              </p>
+              <a href="#" class="event-button">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Event Card 2 -->
+          <article class="event-card">
+            <div class="event-image">
+              <img
+                src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80"
+                alt="Wedding Expo"
+              />
+              <div class="event-date">
+                <span class="month">SEP</span>
+                <span class="day">20</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>Celestial Wedding Showcase</h4>
+              <p class="event-details">
+                <span>🕒 11:00 AM - 4:00 PM</span>
+                <span>📍 Galaxy Ballroom</span>
+              </p>
+              <p class="event-description">
+                Experience the magic of space-themed weddings with our premier
+                vendors and planners.
+              </p>
+              <a href="#" class="event-button">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Event Card 3 -->
+          <article class="event-card">
+            <div class="event-image">
+              <img
+                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80"
+                alt="Concert"
+              />
+              <div class="event-date">
+                <span class="month">OCT</span>
+                <span class="day">05</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>Starlight Concert Series</h4>
+              <p class="event-details">
+                <span>🕒 7:00 PM - 11:00 PM</span>
+                <span>📍 Nebula Stage</span>
+              </p>
+              <p class="event-description">
+                An evening of ethereal music under the stars featuring top local
+                artists.
+              </p>
+              <a href="#" class="event-button">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Calendar Section -->
+      <section class="events-calendar">
+        <h3>Upcoming Events Calendar</h3>
+        <div class="calendar-filters">
+          <button class="filter-button active">All Events</button>
+          <button class="filter-button">Corporate</button>
+          <button class="filter-button">Weddings</button>
+          <button class="filter-button">Concerts</button>
+          <button class="filter-button">Private</button>
+        </div>
+        <div class="calendar-grid">
+          <!-- Calendar content will be added dynamically -->
+          <p class="calendar-notice">🚀 More events coming soon!</p>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="events-cta">
+        <div class="cta-content">
+          <h3>Ready to Host Your Event?</h3>
+          <p>Let us help you create an unforgettable experience</p>
+          <a href="/html/contact.html" class="cta-button">Contact Us Today</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>📍 123 Cosmos Avenue</p>
+          <p>📱 (555) 123-4567</p>
+          <p>✉️ info@astroeventcenter.com</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+            <li><a href="/index.html#gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/countryboyz420"
+              aria-label="Facebook"
+            >
+              <i>🌟</i> Facebook
+            </a>
+            <a
+              href="https://www.linkedin.com/in/david-hawley-5936a817a"
+              aria-label="LinkedIn"
+            >
+              <i>💫</i> LinkedIn
+            </a>
+            <a href="https://github.com/DevCodeX1" aria-label="GitHub">
+              <i>⭐</i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Astro Event Center | Designed by DevCodeX</p>
+      </div>
+    </footer>
+  </body>
+</html>
