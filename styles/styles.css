@@ -1013,6 +1013,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   /* Navigation */
   .navbar {
     flex-direction: column;
@@ -1128,6 +1129,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
   /* General */
   .container {
     padding: 0 15px 2rem;
@@ -1217,8 +1219,238 @@ body {
   }
 }
 
+/* Menu Page Styles */
+.menu-hero {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.9)),
+    url('https://images.unsplash.com/photo-1495195134817-aeb325a55b65?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  margin: 2rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(100, 255, 218, 0.1), transparent);
+  animation: aurora 8s infinite alternate;
+}
+
+.menu-hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(120deg, #64ffda, #88e0ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.menu-hero p {
+  font-size: 1.4rem;
+  color: #ccd6f6;
+  opacity: 0.9;
+}
+
+/* Menu Categories */
+.menu-categories {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.menu-category {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(10, 25, 47, 0.5);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.menu-category h3 {
+  color: #64ffda;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.menu-category h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #64ffda, transparent);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  background: rgba(10, 25, 47, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(100, 255, 218, 0.3);
+  box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+}
+
+.menu-item-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.menu-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item-image img {
+  transform: scale(1.1);
+}
+
+.menu-item-content {
+  padding: 1.5rem;
+}
+
+.menu-item-content h4 {
+  color: #64ffda;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item-content .description {
+  color: #8892b0;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.menu-item-content .price {
+  display: inline-block;
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Dietary Information */
+.dietary-info {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(10, 25, 47, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 16px;
+}
+
+.dietary-info h3 {
+  color: #64ffda;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.dietary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.dietary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dietary-item .icon {
+  font-size: 2rem;
+}
+
+.dietary-item p {
+  color: #8892b0;
+}
+
+/* Menu Page Responsive Styles */
+@media (max-width: 768px) {
+  .menu-hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .menu-hero p {
+    font-size: 1.2rem;
+  }
+
+  .menu-category {
+    padding: 1.5rem;
+  }
+
+  .menu-category h3 {
+    font-size: 1.8rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-hero h2 {
+    font-size: 2rem;
+  }
+
+  .menu-hero p {
+    font-size: 1rem;
+  }
+
+  .menu-category {
+    padding: 1rem;
+  }
+
+  .menu-category h3 {
+    font-size: 1.5rem;
+  }
+
+  .menu-item-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .dietary-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 /* Animation Optimization */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   ::before,
   ::after {
